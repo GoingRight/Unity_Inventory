@@ -1,18 +1,39 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class MainUI : BaseUI
 {
-    // Start is called before the first frame update
-    void Start()
+    public Button statBtn;
+    public Button inventoryBtn;
+
+    private void Awake()
     {
-        
+        Button[] buttons = GetComponentsInChildren<Button>();
+
+        foreach(Button btn in buttons)
+        {
+            if (btn.gameObject.name == "StatusBtn")
+            {
+                statBtn = btn;
+            }
+            else if(btn.gameObject.name == "InventoryBtn")
+            {
+                inventoryBtn = btn;
+            }
+        }
+        statBtn.onClick.AddListener(ToStatUI);
+        inventoryBtn.onClick.AddListener(ToInventoryUI);
     }
 
-    // Update is called once per frame
-    void Update()
+    public void ToStatUI()
     {
-        
+        UIManager.Instance.mainscene.ChangeUITo(UIManager.Instance.mainscene.status);
+    }
+
+    public void ToInventoryUI()
+    {
+        UIManager.Instance.mainscene.ChangeUITo(UIManager.Instance.mainscene.inventory);
     }
 }

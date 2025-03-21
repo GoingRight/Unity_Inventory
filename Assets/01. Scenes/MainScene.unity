@@ -172,7 +172,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   main: {fileID: 0}
-  state: {fileID: 0}
+  status: {fileID: 0}
   inventory: {fileID: 0}
   information: {fileID: 0}
   changingUI: []
@@ -1465,6 +1465,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78e99761ffa993742836dbeb7e838411, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  statBtn: {fileID: 0}
+  inventoryBtn: {fileID: 0}
 --- !u!1 &438143922
 GameObject:
   m_ObjectHideFlags: 0
@@ -1581,6 +1583,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72a334058f60aa14489bb288010705c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nameTxt: {fileID: 1632903529}
+  lvTxt: {fileID: 1301835341}
+  expTxt: {fileID: 355858726}
+  expBar: {fileID: 614856463}
+  description: {fileID: 906246334}
 --- !u!1 &440361951
 GameObject:
   m_ObjectHideFlags: 0
@@ -2722,6 +2729,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4602660e206620949b8b2d303d64e138, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  atkTxt: {fileID: 0}
+  defTxt: {fileID: 0}
+  hpTxt: {fileID: 0}
+  critTxt: {fileID: 0}
+  backBtn: {fileID: 0}
 --- !u!1 &880531762
 GameObject:
   m_ObjectHideFlags: 0
@@ -3006,8 +3018,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 136.4, y: -150}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: 136.4, y: -275}
+  m_SizeDelta: {x: 450, y: 300}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &906246334
 MonoBehaviour:
@@ -4372,6 +4384,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1338710329}
+  - component: {fileID: 1338710333}
+  - component: {fileID: 1338710332}
+  - component: {fileID: 1338710331}
+  - component: {fileID: 1338710330}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -4396,6 +4412,67 @@ Transform:
   - {fileID: 166977432}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1338710330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1338710328}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3cef5291ea41b7b4b8013f759012c0f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1338710331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1338710328}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bef36f4a8ff81c54e9b084310c015f97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inventorySize: 0
+--- !u!114 &1338710332
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1338710328}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 505ca97a227d89544af604d3301e9058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerName: Rtan
+  description: "\uCF54\uB529\uC758 \uB178\uC608\uAC00 \uB41C\uC9C0 10\uB144\uC9F8
+    \uB418\uB294 \uBA38\uC2B4\uC785\uB2C8\uB2E4. \uC624\uB298\uB3C4 \uBC24\uC0D0\uC77C\uB9CC
+    \uB0A8\uC544\uC11C \uCE58\uD0A8\uC744 \uC2DC\uD0AC\uC9C0\uB3C4 \uBAA8\uB978\uB2E4\uB294
+    \uC0DD\uAC01\uC5D0 \uBC30\uBBFC\uC744 \uCF1C\uACE0 \uC788\uB124\uC694."
+  lv: 10
+  maxExp: 12
+  curExp: 9
+  gold: 20000
+--- !u!114 &1338710333
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1338710328}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c3bcc85407374f418e2663cc48b3822, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  information: {fileID: 0}
+  condition: {fileID: 0}
+  inventory: {fileID: 0}
 --- !u!1 &1401247008
 GameObject:
   m_ObjectHideFlags: 0

@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerInformation : MonoBehaviour
 {
     public string playerName = "Rtan";
-    public string description = "ÄÚµùÀÇ ³ë¿¹°¡ µÈÁö 10³âÂ° µÇ´Â ¸Ó½¿ÀÔ´Ï´Ù. ¿À´Ãµµ ¹ã»øÀÏ¸¸ ³²¾Æ¼­ Ä¡Å²À» ½ÃÅ³Áöµµ ¸ğ¸¥´Ù´Â »ı°¢¿¡ ¹è¹ÎÀ» ÄÑ°í ÀÖ³×¿ä.";
+    public string description = "ì½”ë”©ì˜ ë…¸ì˜ˆê°€ ëœì§€ 10ë…„ì§¸ ë˜ëŠ” ë¨¸ìŠ´ì…ë‹ˆë‹¤. ì˜¤ëŠ˜ë„ ë°¤ìƒì¼ë§Œ ë‚¨ì•„ì„œ ì¹˜í‚¨ì„ ì‹œí‚¬ì§€ë„ ëª¨ë¥¸ë‹¤ëŠ” ìƒê°ì— ë°°ë¯¼ì„ ì¼œê³  ìˆë„¤ìš”.";
     public int lv = 10;
     public int maxExp = 12;
     public int curExp = 9;

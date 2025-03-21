@@ -5,7 +5,7 @@ using UnityEngine;
 public class MainSceneUI : MonoBehaviour
 {
     public MainUI main;
-    public StatUI state;
+    public StatUI status;
     public InventoryUI inventory;
     public InformationUI information;
 
@@ -14,12 +14,12 @@ public class MainSceneUI : MonoBehaviour
     private void Awake()
     {
         main = GetComponentInChildren<MainUI>(true);
-        state = GetComponentInChildren<StatUI>(true);
+        status = GetComponentInChildren<StatUI>(true);
         inventory = GetComponentInChildren<InventoryUI>(true);
         information = GetComponentInChildren<InformationUI>();
 
         changingUI.Add(main.gameObject);
-        changingUI.Add(state.gameObject);
+        changingUI.Add(status.gameObject);
         changingUI.Add(inventory.gameObject);
     }
 
