@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class PlayerStat : MonoBehaviour
 {
-    public Stat atk;
-    public Stat def;
-    public Stat hp;
-    public Stat crit;
+    public Stat atk = new Stat();
+    public Stat def = new Stat();
+    public Stat hp = new Stat();
+    public Stat crit = new Stat();
 
     private void Awake()
     {

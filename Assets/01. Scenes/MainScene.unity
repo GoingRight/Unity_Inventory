@@ -2729,10 +2729,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4602660e206620949b8b2d303d64e138, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  atkTxt: {fileID: 0}
-  defTxt: {fileID: 0}
-  hpTxt: {fileID: 0}
-  critTxt: {fileID: 0}
+  atkTxt: {fileID: 1237363864}
+  defTxt: {fileID: 537138933}
+  hpTxt: {fileID: 2107829980}
+  critTxt: {fileID: 89693191}
   backBtn: {fileID: 0}
 --- !u!1 &880531762
 GameObject:

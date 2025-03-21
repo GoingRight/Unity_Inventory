@@ -18,6 +18,12 @@ public class StatUI : BaseUI
         backBtn = GetComponentInChildren<Button>();
         backBtn.onClick.AddListener(Back);
     }
+
+    private void Start()
+    {
+        SetActive();
+    }
+
     public override void SetActive()
     {
         atkTxt.text = CharacterManager.Instance._player.condition.atk.value.ToString();
