@@ -222,6 +222,7 @@ GameObject:
   - component: {fileID: 3224823698034307506}
   - component: {fileID: 2996594148283282959}
   - component: {fileID: 465586379342485827}
+  - component: {fileID: 6389284933304320935}
   m_Layer: 5
   m_Name: ItmeSlot
   m_TagString: Untagged
@@ -332,6 +333,21 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &6389284933304320935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6438104274755576003}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0962ca6feb17e584db97b55e312ccf64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  button: {fileID: 0}
+  icon: {fileID: 6843417218349340782}
+  equipMark: {fileID: 2367303126429407645}
 --- !u!1 &8870917504885849992
 GameObject:
   m_ObjectHideFlags: 0

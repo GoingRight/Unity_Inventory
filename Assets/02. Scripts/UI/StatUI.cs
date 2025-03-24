@@ -19,7 +19,7 @@ public class StatUI : BaseUI
         backBtn.onClick.AddListener(Back);
     }
 
-    private void Start()
+    private void OnEnable()
     {
         SetActive();
     }

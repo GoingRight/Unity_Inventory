@@ -1,6 +1,8 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public enum ItemType
 {
@@ -15,37 +17,10 @@ public class ItemData : ScriptableObject
     [Header("Info")]
     public string itemName;
     public ItemType itemType;
-    public int idx;
-    public float value;
-    
-    public void Equip()
-    {
-        if(itemType == ItemType.Weapon)
-        {
+   
 
-        }
-        else if(itemType == ItemType.Armor)
-        {
+    public Sprite icon;
 
-        }
-        else
-        {
-
-        }
-    }
-    public void UnEquip()
-    {
-        if (itemType == ItemType.Weapon)
-        {
-
-        }
-        else if (itemType == ItemType.Armor)
-        {
-
-        }
-        else
-        {
-
-        }
-    }
+    public int value;
+    public int trinketBuffIdx;
 }
