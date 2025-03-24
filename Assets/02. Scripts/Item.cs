@@ -29,7 +29,6 @@ public class Item
             }
             CharacterManager.Instance._player.inventory.equippedWeapon = this;
             CharacterManager.Instance._player.condition.atk.value += data.value;
-            Debug.Log("공격력 올라감");
         }
         else if (data.itemType == ItemType.Armor)
         {

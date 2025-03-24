@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 337fdcdf7ec227f44ac5ec7aa40a275f, type: 3}
-  m_Name: Weapon_Sword
+  m_Name: Trinket_Ring
   m_EditorClassIdentifier: 
-  itemName: "\uAE30\uC0AC\uC758 \uAC80"
-  itemType: 0
-  icon: {fileID: 21300000, guid: 8d6b7005c0b907c418e96c6394be40f2, type: 3}
-  value: 10
-  trinketBuffIdx: 0
+  itemName: "\uC0DD\uBA85\uC758 \uBC18\uC9C0"
+  itemType: 2
+  icon: {fileID: 21300000, guid: 286ce66ac3cfed84aa731d535cefe851, type: 3}
+  value: 30
+  trinketBuffIdx: 2

@@ -25,12 +25,10 @@ public class UIItemSlot : MonoBehaviour
         if (CharacterManager.Instance._player.inventory.slots[index].item.IsEquipped == false)
         {
             CharacterManager.Instance._player.inventory.slots[index].item.Equip();
-            Debug.Log("장착됨");
         }
         else
         {
             CharacterManager.Instance._player.inventory.slots[index].item.UnEquip();
-            Debug.Log("해제됨");
         }
 
     }
