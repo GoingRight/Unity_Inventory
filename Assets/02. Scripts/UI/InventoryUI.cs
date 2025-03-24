@@ -12,6 +12,7 @@ public class InventoryUI : BaseUI
     public TextMeshProUGUI curItemCountTxt;
     public TextMeshProUGUI maxItemCountTxt;
     public Transform slots;
+    public ScrollRect scrollRect;
     public UIItemSlot[] uiSlots;
     public GameObject slotUIPrefab;
     public Button backBtn;
@@ -26,6 +27,11 @@ public class InventoryUI : BaseUI
         Init();
     }
 
+    private void OnEnable()
+    {
+        scrollRect.verticalNormalizedPosition = 1;
+    }
+
     public void Init()
     {
         inventory = CharacterManager.Instance._player.inventory;
@@ -38,6 +44,7 @@ public class InventoryUI : BaseUI
             uiSlots[i].index = i;
         }
         SetUIItemSlot();
+        scrollRect.verticalNormalizedPosition = 1;
     }
 
     public void SetUIItemSlot()

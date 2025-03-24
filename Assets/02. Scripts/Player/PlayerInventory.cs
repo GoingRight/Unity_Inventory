@@ -24,7 +24,7 @@ public class PlayerInventory : MonoBehaviour
         equippedWeapon = null;
         equippedArmor = null;
         equippedTrinket = null;
-        inventorySize = 9;
+        inventorySize = 20;
         slots = new ItemSlot[inventorySize];
         for (int i = 0; i < slots.Length; i++)
         {
@@ -57,6 +57,7 @@ public class PlayerInventory : MonoBehaviour
 
     public void CountItem()
     {
+        curItemCount = 0;
         foreach(ItemSlot slot in slots)
         {
             if(slot.item != null)
