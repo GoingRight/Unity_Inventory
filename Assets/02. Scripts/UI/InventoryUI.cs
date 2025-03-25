@@ -20,6 +20,8 @@ public class InventoryUI : BaseUI
     private void Awake()
     {
         backBtn.onClick.AddListener(Back);
+        scrollRect = GetComponentInChildren<ScrollRect>();
+        scrollRect.verticalNormalizedPosition = 1;
     }
 
     private void Start()
@@ -44,7 +46,6 @@ public class InventoryUI : BaseUI
             uiSlots[i].index = i;
         }
         SetUIItemSlot();
-        scrollRect.verticalNormalizedPosition = 1;
     }
 
     public void SetUIItemSlot()

@@ -71,7 +71,7 @@ public class Item
     {
         if (data.itemType == ItemType.Weapon)
         {
-            CharacterManager.Instance._player.inventory.equippedArmor = null;
+            CharacterManager.Instance._player.inventory.equippedWeapon = null;
             CharacterManager.Instance._player.condition.atk.value -= data.value;
         }
         else if (data.itemType == ItemType.Armor)
